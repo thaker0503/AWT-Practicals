@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <style>
+        *{
+            background-color: rgb(84, 144, 208);
+            color: aliceblue;
+        }
+        p{
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+        #hello{
+            text-align: center;
+            font-size: 5ch;
+            background-color: rgb(212, 184, 92);
+            width: 100%;
+            min-height: 40px;
+        }
+        #h{
+            text-align: center;
+        }
+        #fonts{
+            background-color: azure;
+            color: black;
+        }
+        
+        .fonts{
+            background-color: azure;
+            color: black;
+        }
+        .fonts:hover{
+            background-color: black;
+            color: wheat;
+        }
+        #fonts:hover{
+            background-color: black;
+            color: wheat;
+        }
+        li{
+            font-size: larger;
+            background-color: aquamarine;
+            color: black;
+            width: fit-content;
+        }
+        dt{
+            font-size: larger;
+            background-color: aquamarine;
+            color: black;
+            width: fit-content;
+        }
+        dd{
+            font-size: larger;
+            background-color: aquamarine;
+            color: black;
+            width: fit-content;
+        }
+        #main li ul li{
+            display: none;
+        }
+        #main li:hover ul li{
+            display: block;
+        }
+        table{
+            background-color: beige; 
+            font-family:  Helvetica, Arial, sans-serif;
+            font-size: large;
+            border: 10px;
+            border-color: black;
+            width: 50%;
+        }
+        td,th{
+            column-span: all;
+            padding: 10px;
+            margin: 10px;
+        }
+        thead{
+            text-align: center;
+            font-size: larger;
+        }
+        td:hover,th:hover{
+            padding: 20px;
+            background-color: black;
+            
+        }
+        fieldset p{
+            display: none;
+        }
+        fieldset:hover p{
+            display: inline-block;
+        }
+        input{
+            background-color: white;
+            color:black;
+        }
+        .exampleDiv{
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+            color: black;
+            animation-duration: 3s;
+        }
+       
+
+
+
+
+    </style>
+</head>
+<body>
+    <p id="hello">Hello World!</p>
+    <div class="hello_world">
+        <p><b> This is a demo webpage for HTML programming language. This is an example of paragraph tag.</b></p>
+    </div>
+    <div class="headings">
+    
+        <p>Different types of Headings are as follows:</p>
+        <h1 id="h">Hello World!</h1>
+        <h2 id="h">Hello World!</h2>
+        <h3 id="h">Hello World!</h3>
+        <h4 id="h">Hello World!</h4>
+        <h5 id="h">Hello World!</h5>
+        <h6 id="h">Hello World!</h6>
+    </div>
+    <div class="fonts">
+    
+        <p id="fonts">Displaying Font styles using tags and css, also added hover effect:</p>
+        <p id="fonts"><b id="fonts">This is a bold text.</b></p>
+        <p id="fonts"><i id="fonts">This is an itallic text.</i></p>
+        <p id="fonts"><u id="fonts">This is an underlined text.</u></p>
+        <p id="fonts">This is an example of <sub id="fonts">subscript</sub>.</p>
+        <p id="fonts">This is an example of <sup id="fonts">superscript</sup>.</p>
+
+    </div>
+
+    <div class="list">
+        <p style="font-size:larger; text-align:justify;">Types of lists in html:</p>
+        <h1>Ordered list:</h1>
+            <ol>
+                <li>This is an example of ordered list.</li>
+                <li>This is an example of ordered list.</li>
+                <li>This is an example of ordered list.</li>
+            </ol><hr>
+        <h1>Unordered list:</h1>
+            <ul>
+                <li>This is an example of ordered list.</li>
+                <li>This is an example of ordered list.</li>
+                <li>This is an example of ordered list.</li>
+            </ul><hr>
+        <h1>Defined list:</h1>
+            <dl>
+                <dt>This is an example of defined list.</dt>
+                <dd>This is an example of defined list.</dd>
+                <dt>This is an example of defined list.</dt>
+            </dl><hr>
+        <h1>Nested list:</h1>
+        <h2>Ordered in Unordered:</h2>
+            <ul id="mainul">
+                <li>This is an example of ordered list.</li>
+                <ol >
+                    <li>This is an example of ordered list.</li>
+                    <li>This is an example of ordered list.</li>
+                    <li>This is an example of ordered list.</li>
+                </ol>
+                <li>This is an example of ordered list.</li>
+            </ul><hr>
+        <h2>Unordered in Ordered:</h2>
+            <ol>
+                <li>This is an example of ordered list.</li>
+                <ul>
+                    <li>This is an example of ordered list.</li>
+                    <li>This is an example of ordered list.</li>
+                    <li>This is an example of ordered list.</li>
+                </ul>
+                <li>This is an example of ordered list.</li>
+            </ol><hr>
+        <h2>Defined in Ordered:</h2>
+            <ol>
+                <li>This is an example of ordered list.</li>
+                <dl>
+                    <dt>This is an example of ordered list.</dt>
+                    <dd>This is an example of ordered list.</dd>
+                    <dt>This is an example of ordered list.</dt>
+                </dl>
+                <li>This is an example of ordered list.</li>
+            </ol><hr>
+        <h2>Ordered in Defined:</h2>
+            <dl>
+                <dt>This is an example of ordered list.</dt>
+                <ol>
+                    <li>This is an example of ordered list.</li>
+                    <li>This is an example of ordered list.</li>
+                    <li>This is an example of ordered list.</li>
+                </ol>
+                <dt>This is an example of ordered list.</dt>
+            </dl><hr>
+        <h2>Unordered in Defined:</h2>
+            <dl>
+                <dt>This is an example of ordered list.</dt>
+                <ul>
+                    <li>This is an example of ordered list.</li>
+                    <li>This is an example of ordered list.</li>
+                    <li>This is an example of ordered list.</li>
+                </ul>
+                <dt>This is an example of ordered list.</dt>
+            </dl><hr>
+        <h2> Defined in Unordered:</h2>
+            <ul>
+                <li>This is an example of ordered list.</li>
+                <dl>
+                    <dt>This is an example of ordered list.</dt>
+                    <dd>This is an example of ordered list.</dd>
+                    <dt>This is an example of ordered list.</dt>
+                </dl>
+                <li>This is an example of ordered list.</li>
+            </ul><hr>  
+        
+        <h2>Adding Hover effect on a list:</h2>
+        <ul id="main">
+            <li>Hello World!
+                <ul>
+                    <li>
+                    Hello World!
+                    </li>
+                </ul>
+            </li>
+            <li>Hello World!</li>
+            <li>Hello World!</li>
+        </ul>
+        
+    </div>
+    <div class="table">
+        <table>
+            <thead>Displaying table in HTML</thead>
+            <tbody>
+                <tr>
+                    <th>Table Heading</th>
+                    <th>Table Heading</th>
+                    <th>Table Heading</th>
+                </tr>
+                <tr>
+                    <td>Table Item</td>
+                    <td>Table Item  </td>
+                    <td>Table Item</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="media">
+        <h1>Displaying Media in HTML</h1>
+        <img src="./images/money-stack-1423986.jpg" alt="Money.jpg" width="700px" height="500px"><figcaption>Money Stack</figcaption>
+        <h2>Video in HTML</h2>
+        <video src="./videos/mixkit-stars-in-space-1610.mp4" autoplay controls muted width="720px" height="400px"></video>
+        <h2>Embedded video in HTML</h2>
+        <iframe width="683" height="384" src="https://www.youtube.com/embed/6RrEQJNZwPQ" title="No Love (Official Audio) - Shubh | thiarajxtt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2>Audio in HTML</h2>
+        <audio src="./audio/pasoori.mp3" muted controls>Pasoori.mp3</audio>
+    </div>
+    <div class="form">
+        <form action="post" style="margin: 10px; padding: 10px; text-align:center; align-items: stretch;">
+            <fieldset style="text-align:justify;padding: 5px;margin: 5px;"><legend style="text-align: center; font-size:larger;">Form</legend>
+                <p>
+                    First Name: <input type="text" name="Fname" id="" placeholder="Enter your First Name"><br>
+                    Last Name: <input type="text" name="Lname" id="" placeholder="Enter your Last Name"><br>
+                    Phone Number: <input type="text" name="phoneNumber" id="" placeholder="Enter your Phone Number"><br>
+                    Email id: <input type="email" name="emailId" id="" placeholder="Enter your E-mail Id"><br>
+                    Password: <input type="password" name="pass" id="" placeholder="Enter your Password"><br>
+                    Gender: <input type="radio" name="genM" id="">Male <input type="radio" name="genF" id="">Female <input type="radio" name="genO" id="">Others<br>
+                    <input type="checkbox" name="t_c" id=""> Accept our Terms & Conditions.<br>
+                    <input type="button" value="Submit">
+
+
+                </p>
+            </fieldset>
+        </form>
+    </div>
+    <div class="css-animations">
+        <h1>Displaying animations using css</h1>
+        <div class="exampleDiv" id="translate">Translate</div><hr>
+        <div class="exampleDiv" id="roatate">Rotate</div><hr>
+        <div class="exampleDiv" id="rotate3d">Rotate 3d</div><hr>
+        <div class="exampleDiv" id="skew">Skew</div><hr>
+        <div class="exampleDiv" id="scale">Scale</div><hr>
+        <div class="exampleDiv" id="opacity">Opacity</div><hr>
+        <div class="exampleDiv" id="rgba">RGBA</div><hr>
+        <div class="exampleDiv" id="overflow">Overflow</div><hr>
+        <div class="exampleDiv" id="boxshadow">box shadow</div><hr>
+        <div class="exampleDiv" id="textshadow">text shadow</div><hr>
+        <div class="exampleDiv" id="borderradius">Border Radius</div>
+
+
+    </div>
+
+
+    
+</body>
+</html>
