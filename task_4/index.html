@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: white;
+        }
+        nav{
+            display: flex;
+            background-color: #7aacff;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            height: 50px;
+            
+            
+        }
+        nav ul{
+            padding-top: 12px;
+            
+
+        }
+        
+        nav li{
+            
+            text-align: center;
+            display: inline;
+            list-style: none;
+            padding: 0px 10px 0px 10px ;
+            
+        }
+        nav a{
+            color: black;
+            text-decoration: none;
+            
+        }
+        
+        img{
+            width: 100%;
+            height: 530px;
+        }
+        .container{
+            width: 100%;
+            position: absolute;
+            overflow: hidden;
+        }
+        header{
+            height: 530px;
+
+        }
+        .wrapper{
+            display: flex;
+            animation: slide 16s infinite;
+        }
+        @keyframes slide{
+            0%{ transform: translateX(0);}
+            25%{transform: translateX(0);}
+            30%{transform: translateX(-100%);}
+            50%{transform: translateX(-100%);}
+            55%{transform: translateX(-200%);}
+            75%{transform: translateX(-200%);}
+            80%{transform: translateX(-300%);}
+            100%{transform: translateX(-300%);}
+        }
+        #main{
+            margin-top:10px;
+            display:flex;
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            text-align: center;
+            height: 1200px;
+        }
+        #main1{
+            display: flex;
+            width: 70%;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: flex-start;
+
+        }
+        #sidebar{
+            display: flex;
+            width: 29%;
+            flex-direction: column;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+        }
+        #p1{
+            
+            box-sizing: content-box;
+            padding: 20px 60px 20px 78px;
+            display: block;
+        }
+        #p11{
+            display: flex;
+        }
+        #p11 img{
+            margin-top: 10px;
+            margin-right: 25px;
+            width: 100px;
+            height: 70px;
+        }
+        #p1 h2{
+            background-color: #7aacff;
+        }
+        #p1 p{
+            text-align: left;
+            
+        }
+        footer{
+            margin-top: 10px;
+            height: 50px;
+            background-color: #7aacff;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        #p2 fieldset{
+            background: fixed;
+            border: none;
+            text-align: left;
+            margin-top: 25px;
+            
+        }
+        #p2 legend{
+            text-decoration: solid;
+            text-align: center;
+            background-color: #7aacff;
+            width: 100%;
+            margin-top: 0px;
+        }
+        
+
+
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="wrapper">
+                <img src="./images/img_lights_wide.jpg">
+                <img src="./images/img_mountains_wide.jpg">
+                <img src="./images/img_nature_wide.jpg">
+                <img src="./images/img_snow_wide.jpg">
+              </div>
+
+        </div>
+    </header>
+    <main>
+        <div id="main">
+            <div id="main1">
+                <div id="p1">
+                    <h2><a href="#" style="text-decoration: none; color: black;"> Post Title...</a></h2>
+                    <div id="p11">
+                        <img src="./images/360_F_302748918_Vs76DTDodjhhkYuCEFahu0LcoDZkBuaW.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+                    </div>
+                </div>
+                <div id="p1">
+                    <h2><a href="#" style="text-decoration: none; color: black;"> Post Title...</a></h2>
+                    <div id="p11">
+                        <img src="./images/360_F_302748918_Vs76DTDodjhhkYuCEFahu0LcoDZkBuaW.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+                    </div>
+                </div>
+                <div id="p1">
+                    <h2><a href="#" style="text-decoration: none; color: black;"> Post Title...</a></h2>
+                    <div id="p11">
+                        <img src="./images/360_F_302748918_Vs76DTDodjhhkYuCEFahu0LcoDZkBuaW.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+                    </div>
+                </div>
+                <div id="p1">
+                    <h2><a href="#" style="text-decoration: none; color: black;"> Post Title...</a></h2>
+                    <div id="p11">
+                        <img src="./images/360_F_302748918_Vs76DTDodjhhkYuCEFahu0LcoDZkBuaW.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+                    </div>
+                </div>
+                <div id="p1">
+                    <h2><a href="#" style="text-decoration: none; color: black;"> Post Title...</a></h2>
+                    <div id="p11">
+                        <img src="./images/360_F_302748918_Vs76DTDodjhhkYuCEFahu0LcoDZkBuaW.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+                    </div>
+                </div>
+                <div id="p1">
+                    <h2><a href="#" style="text-decoration: none; color: black;"> Post Title...</a></h2>
+                    <div id="p11">
+                        <img src="./images/360_F_302748918_Vs76DTDodjhhkYuCEFahu0LcoDZkBuaW.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+                    </div>
+                </div>
+                             
+            </div>
+            <div id="sidebar">
+                <div id="p2">
+                    <fieldset>
+                        <legend>Title</legend>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitasse platea dictumst vestibulum rhoncus est. </p>
+                    </fieldset>
+                </div>
+                
+                <div id="p2">
+                    <fieldset>
+                        <legend>Title</legend>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitasse platea dictumst vestibulum rhoncus est. </p>
+                    </fieldset>
+                </div>
+                
+                
+                <div id="p2">
+                    <fieldset>
+                        <legend>Title</legend>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitasse platea dictumst vestibulum rhoncus est. </p>
+                    </fieldset>
+                </div>
+                <div id="p2">
+                    <fieldset>
+                        <legend>Title</legend>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitasse platea dictumst vestibulum rhoncus est. </p>
+                    </fieldset>
+                </div>
+                <div id="p2">
+                    <fieldset>
+                        <legend>Title</legend>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitasse platea dictumst vestibulum rhoncus est. </p>
+                    </fieldset>
+                </div>
+                <div id="p2">
+                    <fieldset>
+                        <legend>Title</legend>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitasse platea dictumst vestibulum rhoncus est. </p>
+                    </fieldset>
+                </div>
+                <div id="p2">
+                    <fieldset>
+                        <legend>Title</legend>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitasse platea dictumst vestibulum rhoncus est. </p>
+                    </fieldset>
+                </div>
+                
+            </div>
+
+        </div>
+    </main>
+    <div id="contact">
+        This Is contac
+    </div>
+    <footer>
+        All Rights Reserved.
+    </footer>
+
+    
+</body>
+</html>
