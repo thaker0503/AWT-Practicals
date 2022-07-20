@@ -1,4 +1,5 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Footer() {
   return (
@@ -12,16 +13,17 @@ export default function Footer() {
             <div className="soc-box">
                 <div className="follow-label">Follow Me</div>
                 <div className="soc"> 
-                    <a target="_blank" href="https://www.linkedin.com/"> 
+                    <a href="https://www.linkedin.com/"> 
+                    
                         <span className="ion fab fa-linkedin-in"></span>
                     </a> 
-                    <a target="_blank" href="https://github.com/thaker0503"> 
+                    <a href="https://github.com/thaker0503"> 
                         <span className="ion fab fa-github"></span> 
                     </a> 
-                    <a target="_blank" href="https://www.facebook.com/">
+                    <a href="https://www.facebook.com/">
                         <span className="ion fab fa-facebook-square"></span> 
                     </a> 
-                    <a target="_blank" href="https://www.instagram.com/"> 
+                    <a href="https://www.instagram.com/"> 
                         <span className="ion fab fa-instagram"></span> 
                     </a>
                 </div>
